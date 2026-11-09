@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="css/normalize.css" rel="stylesheet" />
+  <link href="css/styles.css" rel="stylesheet" />
+  <script src="weatherAPI.js" defer></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- Create a field for the user to enter the name of the city and country. -->
+  <h1>Current Weather Detecter</h1>
+  <form id="search">
+
+    <p>
+      <label for="city">City: </label>
+      <input type="text" id="city" required>
+    </p>
+    <p>
+      <label for="country">Country: </label>
+      <input type="text" id="country" required>
+    </p>
+
+    <button type="submit">Check Weather</button>
+  </form>
+
+  <!-- Connect to API to create a field that displays the weather in the city entered by the user. -->
+  <div id="results">
+    <h1>Today's Weather</h1>
+    <div>
+      City: <span id="cityN"></span>
+    </div>
+    <div>
+      <p>
+        Country: <span id="countryN"></span>
+      </p>
+    </div>
+    <div>
+      <p>
+        Temperature: <span id="temperature"></span> &#8451;
+      </p>
+    </div>
+    <div>
+      <p>
+        Condition: <span id="condition"></span>
+      </p>
+    </div>
+
+  </div><!-- results -->
+
+</body>
+
+</html>

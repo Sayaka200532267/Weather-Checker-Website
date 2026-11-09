@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+h1{
+    background-color: rgb(181, 241, 96);
+}
+body{
+    display: inline-block;
+    margin: 0 auto;
+    border: dotted 2px blue;
+}
+html{
+    text-align: center;
+    
+}
+button {
+    width: 120px;
+    height: 40px;
+    color: blue;
+    background-color: aqua;
+    border: solid 2px blue;
+}
